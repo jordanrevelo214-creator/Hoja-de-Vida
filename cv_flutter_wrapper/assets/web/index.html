@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida - Jordan Revelo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado con datos personales -->
+  <header class="header">
+    <div class="avatar">JR</div>
+    <h1>Jordan Javier Revelo Cuastumal</h1>
+    <p class="tag">Estudiante de Ing. en Computación | Desarrollador Junior</p>
+    <p class="ubicacion">📍 El Ángel, Carchi, Ecuador</p>
+  </header>
+
+  <main class="contenedor">
+    <!-- Perfil Profesional -->
+    <section class="tarjeta">
+      <h2>👤 Perfil Profesional</h2>
+      <p>
+        Estudiante de Ingeniería en Computación con gran pasión por la tecnología, 
+        el desarrollo de software y la resolución creativa de problemas. 
+        Cuento con experiencia en desarrollo de aplicaciones web y plataformas digitales, 
+        integrando tecnologías modernas como Python, Django, React, Next.js y Flutter.
+        Enfocado en el aprendizaje continuo, buenas prácticas de desarrollo y trabajo en equipo.
+      </p>
+    </section>
+
+    <!-- Habilidades con filtro interactivo -->
+    <section class="tarjeta">
+      <h2>💻 Habilidades Técnicas</h2>
+      <div class="filtros">
+        <button class="btn-filtro activo" onclick="filtrarHabilidades('todos')">Todas</button>
+        <button class="btn-filtro" onclick="filtrarHabilidades('frontend')">Frontend & Mobile</button>
+        <button class="btn-filtro" onclick="filtrarHabilidades('backend')">Backend & BD</button>
+        <button class="btn-filtro" onclick="filtrarHabilidades('herramientas')">Herramientas</button>
+      </div>
+
+      <div class="chips-contenedor" id="contenedorHabilidades">
+        <!-- Frontend -->
+        <span class="chip frontend">React</span>
+        <span class="chip frontend">Next.js</span>
+        <span class="chip frontend">Flutter</span>
+        <span class="chip frontend">HTML5 / CSS3</span>
+        <!-- Backend -->
+        <span class="chip backend">Python</span>
+        <span class="chip backend">Django</span>
+        <span class="chip backend">Docker</span>
+        <span class="chip backend">PostgreSQL / SQL</span>
+        <span class="chip backend">REST APIs</span>
+        <!-- Herramientas -->
+        <span class="chip herramientas">Git & GitHub</span>
+        <span class="chip herramientas">Trabajo en Equipo</span>
+        <span class="chip herramientas">Metodologías Ágiles</span>
+      </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section class="tarjeta">
+      <h2>💼 Experiencia Laboral</h2>
+      <article class="item-historial">
+        <div class="fila-titulo">
+          <h3>Desarrollador Web Junior</h3>
+          <span class="periodo">Actualidad</span>
+        </div>
+        <p class="empresa">Frontera Tech</p>
+        <p class="descripcion">
+          Diseño, construcción y despliegue de aplicaciones y sitios web interactivos. 
+          Implementación de interfaces intuitivas y conexión con servicios backend.
+        </p>
+      </article>
+    </section>
+
+    <!-- Educación -->
+    <section class="tarjeta">
+      <h2>🎓 Educación Superior</h2>
+      <article class="item-historial">
+        <div class="fila-titulo">
+          <h3>Ingeniería en Computación</h3>
+          <span class="periodo">En curso</span>
+        </div>
+        <p class="empresa">Universidad Politécnica Estatal del Carchi (UPEC)</p>
+        <p class="descripcion">
+          Formación profesional orientada a la ingeniería de software, arquitectura de sistemas, 
+          desarrollo multiplataforma y algoritmos computacionales.
+        </p>
+      </article>
+    </section>
+
+    <!-- Contacto con formulario interactivo -->
+    <section class="tarjeta">
+      <h2>📬 Contacto & Redes</h2>
+      <div class="item-contacto">
+        <span class="icono-contacto">✉️</span>
+        <div>
+          <strong>Correo Electrónico:</strong>
+          <p>jordan.revelo@upec.edu.ec</p>
+        </div>
+      </div>
+      <div class="item-contacto">
+        <span class="icono-contacto">💻</span>
+        <div>
+          <strong>GitHub:</strong>
+          <p><a href="https://github.com/JordanRevelo" target="_blank" rel="noopener noreferrer">github.com/JordanRevelo</a></p>
+        </div>
+      </div>
+
+      <form id="formularioContacto" onsubmit="enviarMensaje(event)">
+        <h3>Envíame un mensaje directo</h3>
+        <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+        <textarea id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+      <p id="mensajeExito" class="oculto">✅ ¡Mensaje validado correctamente! Gracias por contactarme.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jordan Javier Revelo Cuastumal • Hoja de Vida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

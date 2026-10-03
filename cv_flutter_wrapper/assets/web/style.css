@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #F1F5F9;
+  color: #334155;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Cabecera / Header */
+.header {
+  text-align: center;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto 16px auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #DBEAFE;
+  color: #0F4C81;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px auto;
+}
+
+h1 {
+  font-size: 20px;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #E0F2FE;
+  color: #0369A1;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.ubicacion {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+/* Tarjetas de sección */
+.tarjeta {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+  font-size: 16px;
+  color: #0F4C81;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tarjeta p {
+  font-size: 13.5px;
+  color: #475569;
+}
+
+/* Filtros y chips de habilidades */
+.filtros {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-filtro {
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-filtro:hover {
+  background: #E2E8F0;
+}
+
+.btn-filtro.activo {
+  background: #0F4C81;
+  color: white;
+  border-color: #0F4C81;
+}
+
+.chips-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.chip.frontend {
+  background-color: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+}
+
+.chip.backend {
+  background-color: #F0FDF4;
+  color: #166534;
+  border: 1px solid #BBF7D0;
+}
+
+.chip.herramientas {
+  background-color: #FAF5FF;
+  color: #6B21A8;
+  border: 1px solid #E9D5FF;
+}
+
+/* Historial (Experiencia y Educación) */
+.item-historial {
+  margin-top: 6px;
+}
+
+.fila-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.fila-titulo h3 {
+  font-size: 14.5px;
+  color: #1E293B;
+}
+
+.periodo {
+  font-size: 11px;
+  background: #F1F5F9;
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: #64748B;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.empresa {
+  color: #0F4C81;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 3px 0 6px 0;
+}
+
+.descripcion {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Contacto */
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 13.5px;
+}
+
+.icono-contacto {
+  font-size: 18px;
+}
+
+.item-contacto a {
+  color: #0F4C81;
+  text-decoration: none;
+}
+
+.item-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Formulario */
+form {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form h3 {
+  font-size: 13.5px;
+  color: #1E293B;
+}
+
+input, textarea {
+  padding: 9px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  border-color: #0F4C81;
+}
+
+.btn-enviar {
+  background: #0F4C81;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: background 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background: #0c3c66;
+}
+
+.oculto {
+  display: none;
+}
+
+#mensajeExito {
+  margin-top: 10px;
+  color: #166534;
+  background-color: #DCFCE7;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #94A3B8;
+  margin: 24px 0 16px 0;
+}
